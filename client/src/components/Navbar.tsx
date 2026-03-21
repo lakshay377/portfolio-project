@@ -38,7 +38,7 @@ export function Navbar() {
           duration={500}
           className="text-2xl font-bold font-display cursor-pointer hover:text-primary transition-colors"
         >
-          Lakshay<span className="text-primary">.dev</span>
+          Lakshay<span className="text-primary"> Bhati</span>
         </Link>
 
         {/* Desktop Menu */}
