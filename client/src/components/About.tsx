@@ -15,7 +15,7 @@ const features = [
   {
     icon: <Database className="w-6 h-6 text-pink-400" />,
     title: "Database Design",
-    description: "Designing efficient data schemas and managing interactions with MongoDB and PostgreSQL."
+    description: "Designing efficient data schemas and managing interactions with MongoDB and MySQL."
   },
   {
     icon: <Code className="w-6 h-6 text-green-400" />,
@@ -38,7 +38,7 @@ export function About() {
           <h2 className="text-3xl md:text-5xl font-bold mb-4">About Me</h2>
           <div className="h-1 w-20 bg-primary mx-auto rounded-full mb-6" />
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            I'm a dedicated Full-Stack Developer with a knack for turning complex problems into simple, beautiful solutions. My journey in tech is driven by curiosity and a relentless pursuit of excellence.
+           I'm Lakshay — a MERN stack developer who just graduated and is genuinely excited to write code that solves real problems.
           </p>
         </motion.div>
 

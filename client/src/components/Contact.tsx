@@ -41,16 +41,16 @@ export function Contact() {
     setIsSubmitting(true);
 
     try {
-      await emailjs.send(
-        "FjrtlIaNS_KbFATDO6vs4",     // 🔁 replace
-        "template_5urz36b",    // 🔁 replace
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: formData.message,
-        },
-        "3i47TNEG_6yKjFVC0"      // 🔁 replace
-      );
+await emailjs.send(
+  "service_oitwa6e",  // service ID
+  "template_mtjm60h", // template ID
+  {
+    name: formData.name,      // → {{name}} in body + From Name
+    email: formData.email,    // → {{email}} in Reply To
+    message: formData.message // → {{message}} in body
+  },
+  "3i47TNEG_6yKjFVC0"  // public key
+);
 
       toast({
         title: "Message sent!",
@@ -71,7 +71,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-20 bg-secondary/20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
@@ -100,7 +100,7 @@ export function Contact() {
                       <div>
                         <p className="text-slate-300 font-medium">Email</p>
                         <a href="mailto:your@email.com" className="text-white hover:text-primary">
-                          your@email.com
+                          lakshaybhati377@gmail.com
                         </a>
                       </div>
                     </div>
@@ -109,8 +109,8 @@ export function Contact() {
                       <FaLinkedin className="text-primary text-xl mr-4" />
                       <div>
                         <p className="text-muted-foreground font-medium">LinkedIn</p>
-                        <a href="#" target="_blank" className="text-foreground hover:text-primary">
-                          Your LinkedIn
+                        <a href="https://www.linkedin.com/in/lakshay-bhati-377/" target="_blank" className="text-foreground hover:text-primary">
+                          Lakshay Bhati
                         </a>
                       </div>
                     </div>
@@ -119,8 +119,8 @@ export function Contact() {
                       <FaGithub className="text-primary text-xl mr-4" />
                       <div>
                         <p className="text-muted-foreground font-medium">GitHub</p>
-                        <a href="#" target="_blank" className="text-foreground hover:text-primary">
-                          Your GitHub
+                        <a href="https://github.com/lakshay377" target="_blank" className="text-foreground hover:text-primary">
+                          Lakshay Bhati 
                         </a>
                       </div>
                     </div>

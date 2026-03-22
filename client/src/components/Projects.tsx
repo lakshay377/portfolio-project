@@ -15,16 +15,16 @@ const projects = [
   {
     title: "Task Management App",
     description: "Collaborative project management tool with Kanban boards, real-time updates, and team features similar to Trello.",
-    tags: ["Next.js", "Prisma", "PostgreSQL", "Socket.io"],
+    tags: ["React", "Node.js", "MongoDB", "Express.js"],
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
     github: "#",
     demo: "#"
   },
   {
-    title: "AI Content Generator",
-    description: "SaaS platform leveraging OpenAI's GPT-3 to help marketers generate blog posts, social media captions, and ad copy.",
-    tags: ["OpenAI API", "React", "Node.js", "Stripe"],
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
+    title: "Passport Photo Generator",
+    description: "A React app that duplicates passport photos into a print-ready grid layout — just upload, arrange, and print. No backend needed.",
+    tags: ["React", "HTML", "CSS", "JavaScript"],
+    image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?w=800&q=80",
     github: "#",
     demo: "#"
   }
@@ -32,7 +32,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-24 bg-secondary/20">
+    <section id="projects" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

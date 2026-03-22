@@ -19,7 +19,7 @@ const skills = [
 
 export function Skills() {
   return (
-    <section id="skills" className="py-24 relative overflow-hidden">
+    <section id="skills" className="py-24 relative overflow-hidden bg-secondary/20">
       {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px] -z-10" />
 
@@ -33,7 +33,7 @@ export function Skills() {
           <h2 className="text-3xl md:text-5xl font-bold mb-4">Technical Skills</h2>
           <div className="h-1 w-20 bg-primary mx-auto rounded-full mb-6" />
           <p className="text-muted-foreground max-w-xl mx-auto">
-            A comprehensive toolset I use to bring ideas to life. Always learning, always evolving.
+            The technologies I've been learning, building with, and breaking things in.
           </p>
         </motion.div>
 
